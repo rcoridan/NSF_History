@@ -1,6 +1,9 @@
 # Following tutorial on XML from https://docs.python.org/2/library/xml.etree.elementtree.html
 #	recommended by http://www.rdegges.com/quickly-extract-xml-data-with-python/
 
+# Tracking on github in project https://github.com/rcoridan/NSF_History
+
+
 from xml.etree import ElementTree as ET
 import os, glob
 import pandas as pd
