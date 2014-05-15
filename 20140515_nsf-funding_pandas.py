@@ -45,4 +45,3 @@ for zipfile in ziplist:
 
 		len(df.index)
 		df.to_csv(yeartext+'nsf_awards.csv',index=False)
-		print df['Code4'].head(5)
