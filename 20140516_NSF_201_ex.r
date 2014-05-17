@@ -7,7 +7,7 @@ options(RCHART_TEMPLATE = 'Rickshaw.html')
 
 
 #get data
-df<-read.csv('clean_nsf_awards_all.csv')
+df<-read.csv('clean_nsf_awards_all.csv',stringsAsFactors=FALSE)
 directorates<-unique(unlist(df$LongName))
 years<-unique(unlist(df$year))
 
@@ -23,7 +23,7 @@ for (yr in years){
     if (dd == ""){
       dnm<-'Not Available'
     }
-    if (dd == directorates[5]){
+    if (dd == "OFFICE OF THE DIRECTOR"){
       # "OFFICE OF THE DIRECTOR"
       dnm<-'Office of the Director'
     }
@@ -32,7 +32,7 @@ for (yr in years){
     #yrdate<-as.Date(toString(yr),format='%Y')
     yrdate<-ISOdate(yr,1,1,12,0,0)
     exi<-data.frame(Year=yrdate,Directorate=dnm,TotGrants=num,TotExp=totExp,stringsAsFactors=FALSE)
-    cc=rbind(cc,exi)
+    cc<-rbind(cc,exi)
   }
 }
 
@@ -49,12 +49,15 @@ r5$set(
 )
 r5
 r5$save('20140516_nsf_number.html')
+filetext<-readLines('20140516_nsf_number.html')
+filetext[31]=sub('-160px;','440px; font-size:  10px;',filetext[31])
+writeLines(filetext, con = "20140516_nsf_number.html", sep = "\n", useBytes = FALSE)
 
 
 r6 <- Rickshaw$new()
 r6$layer ( 
   TotExp ~ Year, data = cc,groups = "Directorate",
-  height = 400,width = 600
+  height = 600,width = 800
 )
 #turn off features not used in the example
 r6$set(
@@ -63,4 +66,6 @@ r6$set(
 )
 r6
 r6$save('20140516_nsf_expenditures.html')
-r6$publish()
+filetext<-readLines('20140516_nsf_expenditures.html')
+filetext[31]=sub('-160px;','440px; font-size:  10px;',filetext[31])
+writeLines(filetext, con = "20140516_nsf_expenditures.html", sep = "\n", useBytes = FALSE)
