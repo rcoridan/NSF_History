@@ -53,7 +53,7 @@ r5
 r6 <- Rickshaw$new()
 r6$layer ( 
   TotExp ~ Year, data = cc,groups = "Directorate",
-  height = 600,width = 800
+  height = 400,width = 600
 )
 #turn off features not used in the example
 r6$set(
