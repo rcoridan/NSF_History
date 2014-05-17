@@ -36,6 +36,7 @@ for (yr in years){
   }
 }
 
+saveForWeb=TRUE
 
 r5 <- Rickshaw$new()
 r5$layer ( 
@@ -45,14 +46,22 @@ r5$layer (
 #turn off features not used in the example
 r5$set(
   hoverDetail = TRUE, shelving = FALSE, legend = TRUE,
-  slider = FALSE, highlight = FALSE, scheme='colorwheel'
+  slider = FALSE, highlight = TRUE, scheme='colorwheel'
 )
 r5
 r5$save('20140516_nsf_number.html')
 filetext<-readLines('20140516_nsf_number.html')
+if (saveForWeb) {
+  dirStrg<-'/Library/Frameworks/R.framework/Versions/3.1/Resources/library/rCharts/libraries/'
+  filetext[4]=sub(dirStrg,'',filetext[4])
+  filetext[5]=sub(dirStrg,'',filetext[5])
+  filetext[7]=sub(dirStrg,'',filetext[7])
+  filetext[8]=sub(dirStrg,'',filetext[8])
+  filetext[9]=sub(dirStrg,'',filetext[9])
+  filetext[10]=sub(dirStrg,'',filetext[10])
+}
 filetext[31]=sub('-160px;','440px; font-size:  10px;',filetext[31])
 writeLines(filetext, con = "20140516_nsf_number.html", sep = "\n", useBytes = FALSE)
-
 
 r6 <- Rickshaw$new()
 r6$layer ( 
@@ -62,10 +71,19 @@ r6$layer (
 #turn off features not used in the example
 r6$set(
   hoverDetail = TRUE, shelving = FALSE, legend = TRUE,
-  slider = FALSE, highlight = FALSE, scheme='colorwheel'
+  slider = FALSE, highlight = TRUE, scheme='colorwheel'
 )
 r6
 r6$save('20140516_nsf_expenditures.html')
 filetext<-readLines('20140516_nsf_expenditures.html')
+if (saveForWeb) {
+  dirStrg<-'/Library/Frameworks/R.framework/Versions/3.1/Resources/library/rCharts/libraries/'
+  filetext[4]=sub(dirStrg,'',filetext[4])
+  filetext[5]=sub(dirStrg,'',filetext[5])
+  filetext[7]=sub(dirStrg,'',filetext[7])
+  filetext[8]=sub(dirStrg,'',filetext[8])
+  filetext[9]=sub(dirStrg,'',filetext[9])
+  filetext[10]=sub(dirStrg,'',filetext[10])
+}
 filetext[31]=sub('-160px;','440px; font-size:  10px;',filetext[31])
 writeLines(filetext, con = "20140516_nsf_expenditures.html", sep = "\n", useBytes = FALSE)

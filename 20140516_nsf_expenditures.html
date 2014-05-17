@@ -1,13 +1,13 @@
 <!doctype HTML>
 <html>
   <head>
-    <link rel='stylesheet' href='/Library/Frameworks/R.framework/Versions/3.1/Resources/library/rCharts/libraries/rickshaw/css/rickshaw.min.css'>
-    <link rel='stylesheet' href='/Library/Frameworks/R.framework/Versions/3.1/Resources/library/rCharts/libraries/rickshaw/css/jquery-ui.css'>
+    <link rel='stylesheet' href='rickshaw/css/rickshaw.min.css'>
+    <link rel='stylesheet' href='rickshaw/css/jquery-ui.css'>
     
-    <script src='/Library/Frameworks/R.framework/Versions/3.1/Resources/library/rCharts/libraries/rickshaw/js/d3.v2.min.js' type='text/javascript'></script>
-    <script src='/Library/Frameworks/R.framework/Versions/3.1/Resources/library/rCharts/libraries/rickshaw/js/rickshaw.min.js' type='text/javascript'></script>
-    <script src='/Library/Frameworks/R.framework/Versions/3.1/Resources/library/rCharts/libraries/rickshaw/js/jquery.min.js' type='text/javascript'></script>
-    <script src='/Library/Frameworks/R.framework/Versions/3.1/Resources/library/rCharts/libraries/rickshaw/js/jquery-ui.min.js' type='text/javascript'></script>
+    <script src='rickshaw/js/d3.v2.min.js' type='text/javascript'></script>
+    <script src='rickshaw/js/rickshaw.min.js' type='text/javascript'></script>
+    <script src='rickshaw/js/jquery.min.js' type='text/javascript'></script>
+    <script src='rickshaw/js/jquery-ui.min.js' type='text/javascript'></script>
     
     <style>
     .chart_container {
@@ -40,17 +40,17 @@
   </head>
   <body>
     <div class='chart_container'>
-      <div id='yAxischart8191f4f7426' class='yAxis'></div>
-      <div id='chart8191f4f7426' class='rChart rickshaw'></div>
-      <div id='xAxischart8191f4f7426' class='xAxis'></div>
-      <div id='legendchart8191f4f7426' class='legend'></div>
-      <div id='sliderchart8191f4f7426' class='slider'></div>
+      <div id='yAxischart8192345d43c' class='yAxis'></div>
+      <div id='chart8192345d43c' class='rChart rickshaw'></div>
+      <div id='xAxischart8192345d43c' class='xAxis'></div>
+      <div id='legendchart8192345d43c' class='legend'></div>
+      <div id='sliderchart8192345d43c' class='slider'></div>
     </div>
     
     <script type='text/javascript'> 
   var palette = new Rickshaw.Color.Palette({ scheme: "colorwheel" });
   var chartParams = {
- "dom": "chart8191f4f7426",
+ "dom": "chart8192345d43c",
 "width":            800,
 "height":            600,
 "scheme": "colorwheel",
@@ -7099,36 +7099,39 @@
 "color":  palette.color()  
 } 
 ],
-"id": "chart8191f4f7426" 
+"id": "chart8192345d43c" 
 }
-  chartParams.element = document.querySelector('#chart8191f4f7426')
+  chartParams.element = document.querySelector('#chart8192345d43c')
   
-  var graphchart8191f4f7426 = new Rickshaw.Graph(chartParams);
+  var graphchart8192345d43c = new Rickshaw.Graph(chartParams);
   
-  graphchart8191f4f7426.render();
+  graphchart8192345d43c.render();
   
-  var xAxischart8191f4f7426 = new Rickshaw.Graph.Axis.Time({
- "graph":  graphchart8191f4f7426  
+  var xAxischart8192345d43c = new Rickshaw.Graph.Axis.Time({
+ "graph":  graphchart8192345d43c  
 })
-var yAxischart8191f4f7426 = new Rickshaw.Graph.Axis.Y({
- "graph":  graphchart8191f4f7426 ,
+var yAxischart8192345d43c = new Rickshaw.Graph.Axis.Y({
+ "graph":  graphchart8192345d43c ,
 "orientation": "left",
-"element":  document.getElementById('yAxischart8191f4f7426') ,
+"element":  document.getElementById('yAxischart8192345d43c') ,
 "tickFormat":  Rickshaw.Fixtures.Number.formatKMBT  
 })
-graphchart8191f4f7426.render()
-var legendchart8191f4f7426 = new Rickshaw.Graph.Legend({
- "graph":  graphchart8191f4f7426 ,
-"element":  document.getElementById('legendchart8191f4f7426')  
+graphchart8192345d43c.render()
+var legendchart8192345d43c = new Rickshaw.Graph.Legend({
+ "graph":  graphchart8192345d43c ,
+"element":  document.getElementById('legendchart8192345d43c')  
 })
 
-var hoverDetailchart8191f4f7426 = new Rickshaw.Graph.HoverDetail({
- "graph":  graphchart8191f4f7426  
+var hoverDetailchart8192345d43c = new Rickshaw.Graph.HoverDetail({
+ "graph":  graphchart8192345d43c  
 })
-
+var highlightchart8192345d43c = new Rickshaw.Graph.Behavior.Series.Highlight({
+ "graph":  graphchart8192345d43c ,
+"legend":  legendchart8192345d43c  
+})
 
   
-  graphchart8191f4f7426.render();
+  graphchart8192345d43c.render();
   
 </script> 
     
