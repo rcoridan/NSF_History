@@ -48,6 +48,7 @@ r5$set(
   slider = FALSE, highlight = FALSE, scheme='colorwheel'
 )
 r5
+r5$save('20140516_nsf_number.html')
 
 
 r6 <- Rickshaw$new()
@@ -61,3 +62,5 @@ r6$set(
   slider = FALSE, highlight = FALSE, scheme='colorwheel'
 )
 r6
+r6$save('20140516_nsf_expenditures.html')
+r6$publish()
