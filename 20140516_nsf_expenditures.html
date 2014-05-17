@@ -1,0 +1,783 @@
+<!doctype HTML>
+<html>
+  <head>
+    <link rel='stylesheet' href='rickshaw/css/rickshaw.min.css'>
+    <link rel='stylesheet' href='rickshaw/css/jquery-ui.css'>
+    
+    <script src='rickshaw/js/d3.v2.min.js' type='text/javascript'></script>
+    <script src='rickshaw/js/rickshaw.min.js' type='text/javascript'></script>
+    <script src='rickshaw/js/jquery.min.js' type='text/javascript'></script>
+    <script src='rickshaw/js/jquery-ui.min.js' type='text/javascript'></script>
+    
+    <style>
+    .chart_container {
+        position: relative;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .rChart {
+        display: inline-block;
+        margin-left: 40px;
+    }
+   .yAxis {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+   }
+   .legend {
+        position: absolute;
+        top: 0;
+        right: -160px;
+        vertical-align: top;
+    }
+    .slider {
+      margin-left: 40px;
+      margin-top: 12px;
+    }
+    </style>
+    
+  </head>
+  <body>
+    <div class='chart_container'>
+      <div id='yAxischart4175e562b3f' class='yAxis'></div>
+      <div id='chart4175e562b3f' class='rChart rickshaw'></div>
+      <div id='xAxischart4175e562b3f' class='xAxis'></div>
+      <div id='legendchart4175e562b3f' class='legend'></div>
+      <div id='sliderchart4175e562b3f' class='slider'></div>
+    </div>
+    
+    <script type='text/javascript'> 
+  var palette = new Rickshaw.Color.Palette({ scheme: "colorwheel" });
+  var chartParams = {
+ "dom": "chart4175e562b3f",
+"width":            800,
+"height":            600,
+"scheme": "colorwheel",
+"groups": "Directorate",
+"series": [
+ {
+ "data": [
+ {
+ "x":     1262347200,
+"y":      899141482 
+},
+{
+ "x":     1293883200,
+"y":      633238946 
+},
+{
+ "x":     1325419200,
+"y":      984778066 
+},
+{
+ "x":     1357041600,
+"y":      233402148 
+},
+{
+ "x":     1388577600,
+"y":       10945839 
+} 
+],
+"name": "Directorate for Biological Sciences",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "Directorate for Biological Sciences",
+"TotGrants": 1506 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "Directorate for Biological Sciences",
+"TotGrants": 1515 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "Directorate for Biological Sciences",
+"TotGrants": 2796 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "Directorate for Biological Sciences",
+"TotGrants": 877 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "Directorate for Biological Sciences",
+"TotGrants": 121 
+} 
+},
+"color":  palette.color()  
+},
+{
+ "data": [
+ {
+ "x":     1262347200,
+"y":      785469985 
+},
+{
+ "x":     1293883200,
+"y":      660359495 
+},
+{
+ "x":     1325419200,
+"y":     1329532658 
+},
+{
+ "x":     1357041600,
+"y":      599033083 
+},
+{
+ "x":     1388577600,
+"y":       27990577 
+} 
+],
+"name": "Directorate for Computer & Information Science & Engineering",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "Directorate for Computer & Information Science & Engineering",
+"TotGrants": 1690 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "Directorate for Computer & Information Science & Engineering",
+"TotGrants": 1587 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "Directorate for Computer & Information Science & Engineering",
+"TotGrants": 3394 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "Directorate for Computer & Information Science & Engineering",
+"TotGrants": 1601 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "Directorate for Computer & Information Science & Engineering",
+"TotGrants": 200 
+} 
+},
+"color":  palette.color()  
+},
+{
+ "data": [
+ {
+ "x":     1262347200,
+"y":      787800006 
+},
+{
+ "x":     1293883200,
+"y":     1042229101 
+},
+{
+ "x":     1325419200,
+"y":     1334803060 
+},
+{
+ "x":     1357041600,
+"y":      447285712 
+},
+{
+ "x":     1388577600,
+"y":       25472869 
+} 
+],
+"name": "Directorate for Education & Human Resources",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "Directorate for Education & Human Resources",
+"TotGrants": 1116 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "Directorate for Education & Human Resources",
+"TotGrants": 1043 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "Directorate for Education & Human Resources",
+"TotGrants": 2030 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "Directorate for Education & Human Resources",
+"TotGrants": 695 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "Directorate for Education & Human Resources",
+"TotGrants": 64 
+} 
+},
+"color":  palette.color()  
+},
+{
+ "data": [
+ {
+ "x":     1262347200,
+"y":      736015562 
+},
+{
+ "x":     1293883200,
+"y":      619649290 
+},
+{
+ "x":     1325419200,
+"y":     1249798408 
+},
+{
+ "x":     1357041600,
+"y":      583964292 
+},
+{
+ "x":     1388577600,
+"y":       54839638 
+} 
+],
+"name": "Directorate for Engineering",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "Directorate for Engineering",
+"TotGrants": 2410 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "Directorate for Engineering",
+"TotGrants": 2068 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "Directorate for Engineering",
+"TotGrants": 4756 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "Directorate for Engineering",
+"TotGrants": 2283 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "Directorate for Engineering",
+"TotGrants": 328 
+} 
+},
+"color":  palette.color()  
+},
+{
+ "data": [
+ {
+ "x":     1262347200,
+"y":     1259956006 
+},
+{
+ "x":     1293883200,
+"y":      607581354 
+},
+{
+ "x":     1325419200,
+"y":     1967066388 
+},
+{
+ "x":     1357041600,
+"y":      385556130 
+},
+{
+ "x":     1388577600,
+"y":       15572542 
+} 
+],
+"name": "Directorate for Geosciences",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "Directorate for Geosciences",
+"TotGrants": 1976 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "Directorate for Geosciences",
+"TotGrants": 1677 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "Directorate for Geosciences",
+"TotGrants": 3526 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "Directorate for Geosciences",
+"TotGrants": 1306 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "Directorate for Geosciences",
+"TotGrants": 149 
+} 
+},
+"color":  palette.color()  
+},
+{
+ "data": [
+ {
+ "x":     1262347200,
+"y":     1128768090 
+},
+{
+ "x":     1293883200,
+"y":     1063522036 
+},
+{
+ "x":     1325419200,
+"y":     1469064504 
+},
+{
+ "x":     1357041600,
+"y":      495496597 
+},
+{
+ "x":     1388577600,
+"y":       33900122 
+} 
+],
+"name": "Directorate for Mathematical & Physical Sciences",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "Directorate for Mathematical & Physical Sciences",
+"TotGrants": 2654 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "Directorate for Mathematical & Physical Sciences",
+"TotGrants": 2286 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "Directorate for Mathematical & Physical Sciences",
+"TotGrants": 5026 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "Directorate for Mathematical & Physical Sciences",
+"TotGrants": 2130 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "Directorate for Mathematical & Physical Sciences",
+"TotGrants": 297 
+} 
+},
+"color":  palette.color()  
+},
+{
+ "data": [
+ {
+ "x":     1262347200,
+"y":      251543199 
+},
+{
+ "x":     1293883200,
+"y":      195488745 
+},
+{
+ "x":     1325419200,
+"y":      383194172 
+},
+{
+ "x":     1357041600,
+"y":      126684678 
+},
+{
+ "x":     1388577600,
+"y":        6793454 
+} 
+],
+"name": "Directorate for Social, Behavioral & Economic Sciences",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "Directorate for Social, Behavioral & Economic Sciences",
+"TotGrants": 1252 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "Directorate for Social, Behavioral & Economic Sciences",
+"TotGrants": 1012 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "Directorate for Social, Behavioral & Economic Sciences",
+"TotGrants": 2076 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "Directorate for Social, Behavioral & Economic Sciences",
+"TotGrants": 800 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "Directorate for Social, Behavioral & Economic Sciences",
+"TotGrants": 37 
+} 
+},
+"color":  palette.color()  
+},
+{
+ "data": [
+ {
+ "x":     1262347200,
+"y":              0 
+},
+{
+ "x":     1293883200,
+"y":              0 
+},
+{
+ "x":     1325419200,
+"y":              0 
+},
+{
+ "x":     1357041600,
+"y":              0 
+},
+{
+ "x":     1388577600,
+"y":         283787 
+} 
+],
+"name": "National Coordination Office",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "National Coordination Office",
+"TotGrants": 0 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "National Coordination Office",
+"TotGrants": 0 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "National Coordination Office",
+"TotGrants": 0 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "National Coordination Office",
+"TotGrants": 0 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "National Coordination Office",
+"TotGrants": 1 
+} 
+},
+"color":  palette.color()  
+},
+{
+ "data": [
+ {
+ "x":     1262347200,
+"y":           2800 
+},
+{
+ "x":     1293883200,
+"y":        3828218 
+},
+{
+ "x":     1325419200,
+"y":        4147602 
+},
+{
+ "x":     1357041600,
+"y":         488162 
+},
+{
+ "x":     1388577600,
+"y":         148928 
+} 
+],
+"name": "Not Available",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "Not Available",
+"TotGrants": 1 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "Not Available",
+"TotGrants": 6 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "Not Available",
+"TotGrants": 20 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "Not Available",
+"TotGrants": 4 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "Not Available",
+"TotGrants": 5 
+} 
+},
+"color":  palette.color()  
+},
+{
+ "data": [
+ {
+ "x":     1262347200,
+"y":        2034945 
+},
+{
+ "x":     1293883200,
+"y":        2560120 
+},
+{
+ "x":     1325419200,
+"y":        2646396 
+},
+{
+ "x":     1357041600,
+"y":         732994 
+},
+{
+ "x":     1388577600,
+"y":              0 
+} 
+],
+"name": "Office of Budget, Finance & Award Management",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "Office of Budget, Finance & Award Management",
+"TotGrants": 11 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "Office of Budget, Finance & Award Management",
+"TotGrants": 6 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "Office of Budget, Finance & Award Management",
+"TotGrants": 10 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "Office of Budget, Finance & Award Management",
+"TotGrants": 4 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "Office of Budget, Finance & Award Management",
+"TotGrants": 0 
+} 
+},
+"color":  palette.color()  
+},
+{
+ "data": [
+ {
+ "x":     1262347200,
+"y":        3610586 
+},
+{
+ "x":     1293883200,
+"y":        4416117 
+},
+{
+ "x":     1325419200,
+"y":        3946004 
+},
+{
+ "x":     1357041600,
+"y":        3400851 
+},
+{
+ "x":     1388577600,
+"y":         467826 
+} 
+],
+"name": "Office of Information & Resource Management",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "Office of Information & Resource Management",
+"TotGrants": 12 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "Office of Information & Resource Management",
+"TotGrants": 9 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "Office of Information & Resource Management",
+"TotGrants": 12 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "Office of Information & Resource Management",
+"TotGrants": 11 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "Office of Information & Resource Management",
+"TotGrants": 3 
+} 
+},
+"color":  palette.color()  
+},
+{
+ "data": [
+ {
+ "x":     1262347200,
+"y":              0 
+},
+{
+ "x":     1293883200,
+"y":              0 
+},
+{
+ "x":     1325419200,
+"y":              0 
+},
+{
+ "x":     1357041600,
+"y":         897974 
+},
+{
+ "x":     1388577600,
+"y":              0 
+} 
+],
+"name": "Office of Polar Programs",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "Office of Polar Programs",
+"TotGrants": 0 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "Office of Polar Programs",
+"TotGrants": 0 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "Office of Polar Programs",
+"TotGrants": 0 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "Office of Polar Programs",
+"TotGrants": 6 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "Office of Polar Programs",
+"TotGrants": 0 
+} 
+},
+"color":  palette.color()  
+},
+{
+ "data": [
+ {
+ "x":     1262347200,
+"y":      190653001 
+},
+{
+ "x":     1293883200,
+"y":      109490011 
+},
+{
+ "x":     1325419200,
+"y":      127920250 
+},
+{
+ "x":     1357041600,
+"y":       77919707 
+},
+{
+ "x":     1388577600,
+"y":         558705 
+} 
+],
+"name": "Office of the Director",
+"info": {
+ "2010-01-01 12:00:00": {
+ "Year":     1262347200,
+"Directorate": "Office of the Director",
+"TotGrants": 463 
+},
+"2011-01-01 12:00:00": {
+ "Year":     1293883200,
+"Directorate": "Office of the Director",
+"TotGrants": 440 
+},
+"2012-01-01 12:00:00": {
+ "Year":     1325419200,
+"Directorate": "Office of the Director",
+"TotGrants": 606 
+},
+"2013-01-01 12:00:00": {
+ "Year":     1357041600,
+"Directorate": "Office of the Director",
+"TotGrants": 275 
+},
+"2014-01-01 12:00:00": {
+ "Year":     1388577600,
+"Directorate": "Office of the Director",
+"TotGrants": 6 
+} 
+},
+"color":  palette.color()  
+} 
+],
+"id": "chart4175e562b3f" 
+}
+  chartParams.element = document.querySelector('#chart4175e562b3f')
+  
+  var graphchart4175e562b3f = new Rickshaw.Graph(chartParams);
+  
+  graphchart4175e562b3f.render();
+  
+  var xAxischart4175e562b3f = new Rickshaw.Graph.Axis.Time({
+ "graph":  graphchart4175e562b3f  
+})
+var yAxischart4175e562b3f = new Rickshaw.Graph.Axis.Y({
+ "graph":  graphchart4175e562b3f ,
+"orientation": "left",
+"element":  document.getElementById('yAxischart4175e562b3f') ,
+"tickFormat":  Rickshaw.Fixtures.Number.formatKMBT  
+})
+graphchart4175e562b3f.render()
+var legendchart4175e562b3f = new Rickshaw.Graph.Legend({
+ "graph":  graphchart4175e562b3f ,
+"element":  document.getElementById('legendchart4175e562b3f')  
+})
+
+var hoverDetailchart4175e562b3f = new Rickshaw.Graph.HoverDetail({
+ "graph":  graphchart4175e562b3f  
+})
+
+
+  
+  graphchart4175e562b3f.render();
+  
+</script> 
+    
+  </body>
+</html>
